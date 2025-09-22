@@ -1,0 +1,42 @@
+# mavros:
+#   ros__parameters:
+#     fcu_url: "/dev/ttyACM0:921600"
+#     gcs_url: ""
+#     target_system_id: 1
+#     target_component_id: 1
+#     plugin_allowlist:
+#       - 'sys_status'
+#       - 'state'
+#       - 'local_position'
+#       - 'command'
+#       - 'odometry'
+#       - 'vision_pose'
+#       # - 'vision_speed'
+#       # - 'wheel_odometry'
+#       - 'imu'
+
+/**:
+  ros__parameters:
+    plugin_denylist:
+      - actuator_control
+      - ftp
+      - hil
+      # extras
+      - altitude
+      - debug_value
+      - image_pub
+      - px4flow
+      - vibration
+      - vision_speed_estimate
+      - wheel_odometry
+
+    plugin_allowlist:
+      - 'sys_status'
+      - 'state'
+      - 'local_position'
+      - 'command'
+      - 'odometry'
+      - 'vision_pose'
+      # - 'vision_speed'
+      # - 'wheel_odometry'
+      - 'imu'

@@ -1,0 +1,20 @@
+/oak:
+  ros__parameters:
+    camera:
+      i_nn_type: none
+      i_pipeline_type: Depth
+    stereo:
+      i_align_depth: true
+      i_right_rect_publish_topic: true
+      i_right_rect_synced: false
+      i_left_rect_publish_topic: true
+      i_left_rect_synced: false
+    left:
+      i_publish_topic: true
+    right:
+      i_publish_topic: true
+    imu:
+      i_enable_imu: true
+      i_get_base_device_timestamp: true
+
+# ros2 launch depthai_ros_driver camera.launch.py params_file:=/home/rmml03/RMML_Drone_Workspaces/oakd_ws/src/oakd_params.yaml
